@@ -7,13 +7,9 @@ ConsoleWorldEntityUnderMouse():Remove()
 c_select():Remove()
 
 [PLAYER SETS]
---HP
-ThePlayer.components.health:SetMaxHealth(13337)
---sanity
-ThePlayer.components.sanity:SetMax(13337)
---hunger
-ThePlayer.components.hunger:SetMax(13337)
-ThePlayer.components.hunger:Pause(true)
---DMG/speed multi
-ThePlayer.components.combat.damagemultiplier=(999)
-c_speedmult(5)
+ThePlayer.components.health:SetMaxHealth(13337); 
+ThePlayer.components.sanity:SetMax(13337); 
+ThePlayer.components.hunger:SetMax(13337); 
+ThePlayer.components.hunger:Pause(true); 
+ThePlayer.components.combat.damagemultiplier=(999); 
+c_speedmult(5);
