@@ -7,9 +7,13 @@ ConsoleWorldEntityUnderMouse():Remove()
 c_select():Remove()
 
 [PLAYER SETS]
+
 ThePlayer.components.health:SetMaxHealth(13337); 
 ThePlayer.components.sanity:SetMax(13337); 
 ThePlayer.components.hunger:SetMax(13337); 
 ThePlayer.components.hunger:Pause(true); 
 ThePlayer.components.combat.damagemultiplier=(999); 
-c_speedmult(5);
+c_speedmult(7); 
+c_sethunger(1); 
+c_supergodmode(); 
+c_spawn("nightsword",10); 
