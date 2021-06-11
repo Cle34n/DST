@@ -17,3 +17,19 @@ c_speedmult(7);
 c_sethunger(1); 
 c_supergodmode(); 
 c_spawn("nightsword",10); 
+
+//* function gm()
+	GetWorld().minimap.MiniMap:ShowArea(0,0,0,10000)
+	GetPlayer().components.builder.freebuildmode = true
+	GetPlayer().components.builder.inst:PushEvent("unlockrecipe")
+	if c_counttreasures() then 
+	  c_givetreasuremaps()
+	  GetPlayer().components.inventory:DropEverything(false,true)
+	end
+	c_speed(15)
+	c_sethunger(1)
+	c_setsanity(1)
+	c_sethealth(1)
+	c_light(1,1,1)
+	c_godmode()
+end
